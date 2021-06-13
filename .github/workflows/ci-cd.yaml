@@ -96,7 +96,7 @@ jobs:
                     context: .
                     file: ./Dockerfile
                     push: true
-                    target: lock_php
+                    target: toctocbot_php
                     tags: |
                         ghcr.io/aulasoftwarelibre/toc-toc-bot-php:latest
                         ghcr.io/aulasoftwarelibre/toc-toc-bot-php:${{ steps.extract_tag.outputs.tag }}
@@ -109,7 +109,7 @@ jobs:
                     context: .
                     file: ./Dockerfile
                     push: true
-                    target: lock_httpd
+                    target: toctocbot_httpd
                     tags: |
                         ghcr.io/aulasoftwarelibre/toc-toc-bot-httpd:latest
                         ghcr.io/aulasoftwarelibre/toc-toc-bot-httpd:${{ steps.extract_tag.outputs.tag }}

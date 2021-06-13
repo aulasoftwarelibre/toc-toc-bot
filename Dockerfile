@@ -12,7 +12,7 @@ ARG NODE_VERSION=14
 
 ###############################################
 # "node" stage
-FROM node:${NODE_VERSION} AS idea_node
+FROM node:${NODE_VERSION} AS toctocbot_node
 
 WORKDIR /srv/app
 
@@ -28,7 +28,7 @@ RUN set -eux; \
 
 ###############################################
 # "php" stage
-FROM php:${PHP_VERSION}-fpm-alpine AS idea_php
+FROM php:${PHP_VERSION}-fpm-alpine AS toctocbot_php
 
 # persistent / runtime deps
 RUN apk add --no-cache \
@@ -117,7 +117,7 @@ COPY config config/
 COPY migrations migrations/
 COPY public public/
 COPY assets assets/
-COPY --from=idea_node /srv/app/public/build public/build/
+COPY --from=toctocbot_node /srv/app/public/build public/build/
 COPY templates templates/
 COPY translations translations/
 COPY src src/
@@ -143,7 +143,7 @@ CMD ["php-fpm"]
 
 ###############################################
 # "apache" stage
-FROM httpd:${APACHE_VERSION} AS idea_httpd
+FROM httpd:${APACHE_VERSION} AS toctocbot_httpd
 
 EXPOSE 80
 
@@ -156,4 +156,4 @@ COPY docker/httpd/conf.d/httpd.conf /usr/local/apache2/conf/httpd.conf
 
 WORKDIR /srv/app
 
-COPY --from=idea_php /srv/app/public public/
+COPY --from=toctocbot_php /srv/app/public public/
