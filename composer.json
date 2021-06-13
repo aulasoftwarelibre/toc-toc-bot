@@ -1,6 +1,14 @@
 {
+    "name": "aulasoftwarelibre/toc-toc-bot",
+    "authors": [
+        {
+            "name": "Aula de Software Libre",
+            "email": "aulasoftwarelibre@uco.es"
+        }
+    ],
+    "description": "Telegram bot to manage groups",
     "type": "project",
-    "license": "proprietary",
+    "license": "EUPL-1.2",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
@@ -39,6 +47,7 @@
         "symfony/twig-bundle": "^5.3",
         "symfony/validator": "5.3.*",
         "symfony/web-link": "5.3.*",
+        "symfony/webpack-encore-bundle": "^1.11",
         "symfony/yaml": "5.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
