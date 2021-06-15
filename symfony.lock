@@ -88,6 +88,30 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.5.5"
+    },
+    "guzzlehttp/promises": {
+        "version": "1.4.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.8.2"
+    },
+    "illuminate/collections": {
+        "version": "v8.47.0"
+    },
+    "illuminate/contracts": {
+        "version": "v6.20.27"
+    },
+    "illuminate/macroable": {
+        "version": "v8.47.0"
+    },
+    "illuminate/support": {
+        "version": "v6.20.27"
+    },
+    "irazasyed/telegram-bot-sdk": {
+        "version": "v2.3.0"
+    },
     "laminas/laminas-code": {
         "version": "4.3.0"
     },
@@ -97,11 +121,17 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.2.0"
     },
+    "league/event": {
+        "version": "2.2.0"
+    },
     "monolog/monolog": {
         "version": "2.2.0"
     },
     "myclabs/deep-copy": {
         "version": "1.10.2"
+    },
+    "nesbot/carbon": {
+        "version": "2.49.0"
     },
     "nikic/php-parser": {
         "version": "v4.10.5"
@@ -162,11 +192,23 @@
     "psr/event-dispatcher": {
         "version": "1.0.0"
     },
+    "psr/http-client": {
+        "version": "1.0.1"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.0.0"
     },
     "psr/log": {
         "version": "1.1.4"
+    },
+    "psr/simple-cache": {
+        "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
     },
     "sebastian/cli-parser": {
         "version": "1.0.1"
@@ -228,6 +270,9 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "symfony/amqp-messenger": {
+        "version": "v5.3.0"
+    },
     "symfony/asset": {
         "version": "v5.3.0"
     },
@@ -281,6 +326,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v5.3.1"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "v5.3.0"
     },
     "symfony/dom-crawler": {
         "version": "v5.3.0"
@@ -376,6 +424,18 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/messenger": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "e9a414b113ceadbf4e52abe37bf8f1b443f06ccb"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/mime": {
         "version": "v5.3.0"
     },
@@ -470,6 +530,9 @@
         "version": "v5.3.1"
     },
     "symfony/proxy-manager-bridge": {
+        "version": "v5.3.0"
+    },
+    "symfony/redis-messenger": {
         "version": "v5.3.0"
     },
     "symfony/routing": {
@@ -634,6 +697,9 @@
     },
     "twig/twig": {
         "version": "v3.3.2"
+    },
+    "voku/portable-ascii": {
+        "version": "1.5.6"
     },
     "webmozart/assert": {
         "version": "1.10.0"
