@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Telegram\Processor;
+namespace App\Telegram\Processor;
 
 use Telegram\Bot\Objects as Telegram;
 

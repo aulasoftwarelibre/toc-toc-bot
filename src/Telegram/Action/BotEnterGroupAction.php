@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Telegram\Action;
+namespace App\Telegram\Action;
 
 use App\Message\RegisterChatMessage;
-use App\Services\Telegram\Processor\TelegramAction;
-use App\Services\Telegram\Processor\TelegramActionInterface;
+use App\Telegram\Processor\TelegramAction;
+use App\Telegram\Processor\TelegramActionInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Telegram\Bot\Objects as Telegram;
 

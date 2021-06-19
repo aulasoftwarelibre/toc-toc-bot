@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Telegram\Command;
+namespace App\Telegram\Command;
 
 use Telegram\Bot\Actions;
 use Telegram\Bot\Commands\Command;

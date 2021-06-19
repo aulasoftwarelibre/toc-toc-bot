@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Factory;
+namespace App\Telegram\Factory;
 
 use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
 use Telegram\Bot\Api;

@@ -18,7 +18,7 @@ services:
     _instanceof:
         Telegram\Bot\Commands\CommandInterface:
             tags: ['telegram.command']
-        App\Services\Telegram\Processor\TelegramActionInterface:
+        App\Telegram\Processor\TelegramActionInterface:
             tags: ['telegram.message_action']
 
     # makes classes in src/ available to be used as services
