@@ -32,15 +32,7 @@ class BotEnterGroupAction extends TelegramAction
     {
         $newChatMembers = $message->newChatMembers;
 
-        $found = false;
-        foreach ($newChatMembers as $newChatMember) {
-            if ($newChatMember['username'] === $this->botUsername) {
-                $found = true;
-                break;
-            }
-        }
-
-        if (! $found) {
+        if (! $this->checkIfBotIsInMemberList($newChatMembers)) {
             return;
         }
 
@@ -51,5 +43,19 @@ class BotEnterGroupAction extends TelegramAction
                 $message->chat->title
             )
         );
+    }
+
+    /**
+     * @param array<string,array<string,string>> $newChatMembers
+     */
+    protected function checkIfBotIsInMemberList(array $newChatMembers): bool
+    {
+        foreach ($newChatMembers as $newChatMember) {
+            if ($newChatMember['username'] === $this->botUsername) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

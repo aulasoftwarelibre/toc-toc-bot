@@ -3,6 +3,7 @@
         "@symfony/stimulus-bridge": "^2.0.0",
         "@symfony/webpack-encore": "^1.0.0",
         "core-js": "^3.0.0",
+        "fomantic-ui-css": "^2.8.7",
         "localtunnel": "^2.0.1",
         "regenerator-runtime": "^0.13.2",
         "stimulus": "^2.0.0",

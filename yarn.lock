@@ -2420,6 +2420,13 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
+fomantic-ui-css@^2.8.7:
+  version "2.8.7"
+  resolved "https://registry.yarnpkg.com/fomantic-ui-css/-/fomantic-ui-css-2.8.7.tgz#296f491b03aebf47c554c6a138e3903d8cd471d2"
+  integrity sha512-lMriCcy+FMd69qsiTPyg2dVsLMA1Tl61EY/roTeMLmtuSk/yhgRpWb0aqG8p3NzifB9olhUGmZcYboaWQdBufw==
+  dependencies:
+    jquery "^3.4.0"
+
 forwarded@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
@@ -2941,6 +2948,11 @@ jest-worker@^27.0.2:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
+
+jquery@^3.4.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 js-tokens@^4.0.0:
   version "4.0.0"

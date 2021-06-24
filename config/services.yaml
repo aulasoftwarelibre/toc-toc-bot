@@ -35,4 +35,4 @@ services:
     # please note that last definitions always *replace* previous ones
 
     Telegram\Bot\Api:
-        factory: '@App\Services\Factory\TelegramApiServiceFactory'
+        factory: '@App\Telegram\Factory\TelegramApiServiceFactory'

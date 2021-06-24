@@ -1,0 +1,22 @@
+body {
+    background: rgb(40,40,40) none repeat scroll 0% 0%;
+}
+
+body > .grid {
+    height: 100%;
+}
+
+#logo {
+    margin-top: -80px;
+    padding: 10px;
+    background-color: #1B1C1D;
+}
+
+.column {
+    max-width: 650px;
+}
+
+.ui.github.button {
+    color: #ffffff;
+    background-color: #0366d6!important;
+}
